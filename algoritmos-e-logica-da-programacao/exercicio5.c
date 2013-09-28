@@ -1,9 +1,10 @@
 #include <stdio.h>
+#include <time.h>
 #define LIM 10
 
 int main () {
   int numero1 = 0;
-
+  srand(time(0));
   int numero_aleatorio = rand() % LIM + 1;
 
   printf("%d\n", numero_aleatorio);
