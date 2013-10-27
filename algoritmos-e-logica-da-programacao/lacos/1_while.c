@@ -1,0 +1,28 @@
+/*
+ Repetir o fatorial para while e do-while
+*/
+
+#include <stdio.h>
+
+int main()
+{
+  printf("\nVamos fazer o fatorial de 10 utilizando o while\n");
+  
+  int valor=10; //vamos fazer o fatorial de 10
+  int contador = 0;
+  int resultadoFatorial = 0;
+
+  while (valor>=contador) {
+    if (contador>=0 && contador<=1) { // por definicao 0! e 1! = 1
+      resultadoFatorial = 1;
+    } else {
+      resultadoFatorial = resultadoFatorial * contador;
+    }
+    printf("Vamos fazer o fatorial de %d. Parcial %d.\n", contador, resultadoFatorial);
+    contador++;
+  }
+
+  printf("O fatorial de %d eh %d\n", valor, resultadoFatorial);
+
+  return 0;
+}
