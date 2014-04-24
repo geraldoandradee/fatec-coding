@@ -23,3 +23,8 @@ int main(){
 
 	return 0;
 }
+
+/*
+ * Operações com ponteiros: soma, subtração.
+ * Operações entre ponteiros: nao se pode somar ponteiros entre si mas pode-se subtrair entre si;
+ */
