@@ -13,9 +13,26 @@ int main () {
 	scanf("%d", &novo);  // joga a referencia na variavel novo
 
 	pos_novo = busca(v, ult, novo);
-	descola = (v, ult, novo);
-	v[pos_novo] = novo;
-	ult++;
+	desloca(v, ult, novo);
+	v[pos_novo] = novo; // nova posicao pode receber o valor do item
+	ult++; // atualiza a posicao do ultimo item
 
 	return 0;
+}
+
+
+int busca(int *v, int ult, int novo){
+	int i;
+	
+	for (i=0; i<=ult && v[i] < novo;i++);
+	
+	return i;	
+}
+
+
+void desloca(int *v, int ult, int pos_novo) {
+	int i;
+	for (i=ult+1;i>pos_novo;i--) {
+		v[i] = v[i-1];
+	}
 }
