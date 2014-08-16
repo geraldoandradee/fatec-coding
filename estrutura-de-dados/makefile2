@@ -1,0 +1,6 @@
+all: sena_1.o
+	gcc -o target/sena.sh target/sena_1.o -Wno-implicit-int
+sena_1.o: sena_1.c
+	gcc -c sena_1.c -o target/sena_1.o -Wno-implicit-int
+clean:
+	rm -f *.o *.sh target/*
