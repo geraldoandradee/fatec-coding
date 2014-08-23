@@ -1,0 +1,6 @@
+all: vetor.o
+	gcc -o target/vetor.sh target/vetor.o
+vetor.o: vetor.c
+	gcc -c vetor.c -o target/vetor.o
+clean:
+	rm -f *.o *.sh *.out target/*

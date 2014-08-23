@@ -3,4 +3,4 @@ all: sena_1.o
 sena_1.o: sena_1.c
 	gcc -c sena_1.c -o target/sena_1.o -Wno-implicit-int
 clean:
-	rm -f *.o *.sh target/*
+	rm -f *.o *.sh *.out target/*
