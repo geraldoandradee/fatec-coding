@@ -1,0 +1,6 @@
+all: exercicio.o
+	gcc -o target/exercicio.sh target/exercicio.o
+exercicio.o: exercicio.c
+	gcc -c exercicio.c -o target/exercicio.o
+clean:
+	rm -f *.o *.sh *.out target/*
