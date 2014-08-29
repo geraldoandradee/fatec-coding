@@ -3,4 +3,4 @@ all: sort.o
 sort.o: sort_1.c
 	gcc -c sort_1.c -o target/sort.o -Wno-implicit-int
 clean:
-	rm -f *.o *.sh *.out target/*
+	rm -f *.o *.sh target/*
