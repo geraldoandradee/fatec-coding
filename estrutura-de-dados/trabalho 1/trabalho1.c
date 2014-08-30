@@ -7,11 +7,35 @@ int main() {
 	int vetor_desc[T];
 	int vetor_asc[T];
 
+	float contador_comparacao = 0;
+	float contador_atribuicao = 0;
+
 	gera(vetor_aleatorio, T);
 	printf("Vetor aleatorio gerado \n");
 
+	gera_vetor_crescente(vetor_asc, T);
+	printf("Vetor crescente gerado \n");
+
 	gera_vetor_decrescente(vetor_desc, T);
 	printf("Vetor descrescente gerado \n");
+
+	printf("Agora vamos ordenar o vetor aleatorio...");
+	bubble(vetor_aleatorio, T, &contador_comparacao, &contador_atribuicao);
+	printf("\nVetor aleatorio: Contador comparacao %.f Contador atribuicao %.f \n", contador_comparacao, contador_atribuicao);
+
+	contador_comparacao = 0;
+	contador_atribuicao = 0;
+
+	printf("Agora vamos ordenar o vetor crescente...");
+	bubble(vetor_asc, T, &contador_comparacao, &contador_atribuicao);
+	printf("\nVetor crescente: Contador comparacao %.f Contador atribuicao %.f \n", contador_comparacao, contador_atribuicao);
+
+	contador_comparacao = 0;
+	contador_atribuicao = 0;
+
+	printf("Agora vamos ordenar o vetor decrescente...");
+	bubble(vetor_desc, T, &contador_comparacao, &contador_atribuicao);
+	printf("\nVetor decrescente: Contador comparacao %.f Contador atribuicao %.f \n", contador_comparacao, contador_atribuicao);
 //
 //	gera_vetor_crescente(vetor_asc, T);
 //	printf("Vetor crescente gerado \n");
@@ -103,16 +127,21 @@ void mostraInvertido (int *v, int n, char *msg){
 
 
 /* FUN��O UTILIZADA PARA ORDENAR O VETOR UTILIZANDO O ALGOR�TMO "BUBBLE SORT" */
-void bubble (int *v, int n){
+void bubble (int * v, int n, float * cc, float * ca) {
 	int i, j;
-	for ( i = 1; i < n; i++ ){
-		for ( j = 0; j < n - i; j++ ){
-			if (v[j] > v[j+1]){
+	for ( i = 1; i < n; i++ ) {
+		(*cc) = (*cc)+1;
+		for ( j = 0; j < n - i; j++ ) {
+			(*cc) = (*cc)+1;
+			if (v[j] > v[j+1]) {
+				(*cc) = (*cc)+1;
 				troca (v, j);
+				(*ca) = (*ca) + 3;
 			}
 		}
 	}
-	
+	//printf("CC %.f \n", *cc);
+	//printf("CC %.f \n", *ca);
 }
 
 
