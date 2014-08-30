@@ -19,6 +19,7 @@ int main() {
 		bubble(vetor_aleatorio, T, &contador_comparacao, &contador_atribuicao);
 	}
 	printf("Vetor aleatorio: Contador comparacao %.f Contador atribuicao %.f \n", contador_comparacao, contador_atribuicao);
+//Vetor aleatorio: Contador comparacao 16777216 Contador atribuicao 67108864
 
 	i = 0;
 	contador_comparacao = 0;
@@ -32,6 +33,7 @@ int main() {
 		bubble(vetor_asc, T, &contador_comparacao, &contador_atribuicao);
 	}
 	printf("Vetor crescente: Contador comparacao %.f Contador atribuicao %.f \n", contador_comparacao, contador_atribuicao);
+//	Vetor crescente: Contador comparacao 16777216 Contador atribuicao 0
 
 	i = 0;
 	contador_comparacao = 0;
@@ -45,7 +47,7 @@ int main() {
 		bubble(vetor_desc, T, &contador_comparacao, &contador_atribuicao);
 	}
 	printf("Vetor decrescente: Contador comparacao %.f Contador atribuicao %.f \n", contador_comparacao, contador_atribuicao);
-
+//Vetor decrescente: Contador comparacao 16777216 Contador atribuicao 67108864
 	return 0;
 }
 
