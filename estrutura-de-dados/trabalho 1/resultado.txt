@@ -1,0 +1,180 @@
+
+Gerando os vetores, 1 loop Bubble...
+
+Vetor aleatorio: Contador comparacao 7563 Contador atribuicao 7542 
+Vetor crescente: Contador comparacao 5049 Contador atribuicao 0 
+Vetor decrescente: Contador comparacao 9999 Contador atribuicao 14850 
+
+Gerando os vetores, 2 loop Bubble...
+
+Vetor aleatorio: Contador comparacao 17658 Contador atribuicao 22680 
+Vetor crescente: Contador comparacao 5049 Contador atribuicao 0 
+Vetor decrescente: Contador comparacao 9999 Contador atribuicao 14850 
+
+Gerando os vetores, 3 loop Bubble...
+
+Vetor aleatorio: Contador comparacao 17686 Contador atribuicao 22764 
+Vetor crescente: Contador comparacao 5049 Contador atribuicao 0 
+Vetor decrescente: Contador comparacao 9999 Contador atribuicao 14850 
+
+Gerando os vetores, 4 loop Bubble...
+
+Vetor aleatorio: Contador comparacao 17639 Contador atribuicao 22623 
+Vetor crescente: Contador comparacao 5049 Contador atribuicao 0 
+Vetor decrescente: Contador comparacao 9999 Contador atribuicao 14850 
+
+Gerando os vetores, 5 loop Bubble...
+
+Vetor aleatorio: Contador comparacao 17542 Contador atribuicao 22332 
+Vetor crescente: Contador comparacao 5049 Contador atribuicao 0 
+Vetor decrescente: Contador comparacao 9999 Contador atribuicao 14850 
+
+Gerando os vetores, 6 loop Bubble...
+
+Vetor aleatorio: Contador comparacao 17332 Contador atribuicao 21702 
+Vetor crescente: Contador comparacao 5049 Contador atribuicao 0 
+Vetor decrescente: Contador comparacao 9999 Contador atribuicao 14850 
+
+Gerando os vetores, 7 loop Bubble...
+
+Vetor aleatorio: Contador comparacao 17508 Contador atribuicao 22230 
+Vetor crescente: Contador comparacao 5049 Contador atribuicao 0 
+Vetor decrescente: Contador comparacao 9999 Contador atribuicao 14850 
+
+Gerando os vetores, 8 loop Bubble...
+
+Vetor aleatorio: Contador comparacao 17650 Contador atribuicao 22656 
+Vetor crescente: Contador comparacao 5049 Contador atribuicao 0 
+Vetor decrescente: Contador comparacao 9999 Contador atribuicao 14850 
+
+Gerando os vetores, 9 loop Bubble...
+
+Vetor aleatorio: Contador comparacao 17578 Contador atribuicao 22440 
+Vetor crescente: Contador comparacao 5049 Contador atribuicao 0 
+Vetor decrescente: Contador comparacao 9999 Contador atribuicao 14850 
+
+Gerando os vetores, 10 loop Bubble...
+
+Vetor aleatorio: Contador comparacao 17368 Contador atribuicao 21810 
+Vetor crescente: Contador comparacao 5049 Contador atribuicao 0 
+Vetor decrescente: Contador comparacao 9999 Contador atribuicao 14850 
+
+Gerando os vetores, 1 loop Inserction...
+
+Vetor aleatorio: Contador comparacao 17667 Contador atribuicao 22419 
+Vetor crescente: Contador comparacao 99 Contador atribuicao 0 
+Vetor decrescente: Contador comparacao 14949 Contador atribuicao 14850 
+
+Gerando os vetores, 2 loop Inserction...
+
+Vetor aleatorio: Contador comparacao 21768 Contador atribuicao 21570 
+Vetor crescente: Contador comparacao 99 Contador atribuicao 0 
+Vetor decrescente: Contador comparacao 14949 Contador atribuicao 14850 
+
+Gerando os vetores, 3 loop Inserction...
+
+Vetor aleatorio: Contador comparacao 22158 Contador atribuicao 21960 
+Vetor crescente: Contador comparacao 99 Contador atribuicao 0 
+Vetor decrescente: Contador comparacao 14949 Contador atribuicao 14850 
+
+Gerando os vetores, 4 loop Inserction...
+
+Vetor aleatorio: Contador comparacao 23298 Contador atribuicao 23100 
+Vetor crescente: Contador comparacao 99 Contador atribuicao 0 
+Vetor decrescente: Contador comparacao 14949 Contador atribuicao 14850 
+
+Gerando os vetores, 5 loop Inserction...
+
+Vetor aleatorio: Contador comparacao 22860 Contador atribuicao 22662 
+Vetor crescente: Contador comparacao 99 Contador atribuicao 0 
+Vetor decrescente: Contador comparacao 14949 Contador atribuicao 14850 
+
+Gerando os vetores, 6 loop Inserction...
+
+Vetor aleatorio: Contador comparacao 22230 Contador atribuicao 22032 
+Vetor crescente: Contador comparacao 99 Contador atribuicao 0 
+Vetor decrescente: Contador comparacao 14949 Contador atribuicao 14850 
+
+Gerando os vetores, 7 loop Inserction...
+
+Vetor aleatorio: Contador comparacao 23046 Contador atribuicao 22848 
+Vetor crescente: Contador comparacao 99 Contador atribuicao 0 
+Vetor decrescente: Contador comparacao 14949 Contador atribuicao 14850 
+
+Gerando os vetores, 8 loop Inserction...
+
+Vetor aleatorio: Contador comparacao 22833 Contador atribuicao 22635 
+Vetor crescente: Contador comparacao 99 Contador atribuicao 0 
+Vetor decrescente: Contador comparacao 14949 Contador atribuicao 14850 
+
+Gerando os vetores, 9 loop Inserction...
+
+Vetor aleatorio: Contador comparacao 22560 Contador atribuicao 22362 
+Vetor crescente: Contador comparacao 99 Contador atribuicao 0 
+Vetor decrescente: Contador comparacao 14949 Contador atribuicao 14850 
+
+Gerando os vetores, 10 loop Inserction...
+
+Vetor aleatorio: Contador comparacao 23322 Contador atribuicao 23124 
+Vetor crescente: Contador comparacao 99 Contador atribuicao 0 
+Vetor decrescente: Contador comparacao 14949 Contador atribuicao 14850 
+
+Gerando os vetores, 1 loop Selection...
+
+Vetor aleatorio: Contador comparacao 27085 Contador atribuicao 31840 
+Vetor crescente: Contador comparacao 5049 Contador atribuicao 99 
+Vetor decrescente: Contador comparacao 14949 Contador atribuicao 19899 
+
+Gerando os vetores, 2 loop Selection...
+
+Vetor aleatorio: Contador comparacao 26945 Contador atribuicao 36689 
+Vetor crescente: Contador comparacao 5049 Contador atribuicao 99 
+Vetor decrescente: Contador comparacao 14949 Contador atribuicao 19899 
+
+Gerando os vetores, 3 loop Selection...
+
+Vetor aleatorio: Contador comparacao 26783 Contador atribuicao 36657 
+Vetor crescente: Contador comparacao 5049 Contador atribuicao 99 
+Vetor decrescente: Contador comparacao 14949 Contador atribuicao 19899 
+
+Gerando os vetores, 4 loop Selection...
+
+Vetor aleatorio: Contador comparacao 27015 Contador atribuicao 36895 
+Vetor crescente: Contador comparacao 5049 Contador atribuicao 99 
+Vetor decrescente: Contador comparacao 14949 Contador atribuicao 19899 
+
+Gerando os vetores, 5 loop Selection...
+
+Vetor aleatorio: Contador comparacao 27364 Contador atribuicao 37218 
+Vetor crescente: Contador comparacao 5049 Contador atribuicao 99 
+Vetor decrescente: Contador comparacao 14949 Contador atribuicao 19899 
+
+Gerando os vetores, 6 loop Selection...
+
+Vetor aleatorio: Contador comparacao 26824 Contador atribuicao 36638 
+Vetor crescente: Contador comparacao 5049 Contador atribuicao 99 
+Vetor decrescente: Contador comparacao 14949 Contador atribuicao 19899 
+
+Gerando os vetores, 7 loop Selection...
+
+Vetor aleatorio: Contador comparacao 26857 Contador atribuicao 36569 
+Vetor crescente: Contador comparacao 5049 Contador atribuicao 99 
+Vetor decrescente: Contador comparacao 14949 Contador atribuicao 19899 
+
+Gerando os vetores, 8 loop Selection...
+
+Vetor aleatorio: Contador comparacao 27388 Contador atribuicao 37264 
+Vetor crescente: Contador comparacao 5049 Contador atribuicao 99 
+Vetor decrescente: Contador comparacao 14949 Contador atribuicao 19899 
+
+Gerando os vetores, 9 loop Selection...
+
+Vetor aleatorio: Contador comparacao 27184 Contador atribuicao 37068 
+Vetor crescente: Contador comparacao 5049 Contador atribuicao 99 
+Vetor decrescente: Contador comparacao 14949 Contador atribuicao 19899 
+
+Gerando os vetores, 10 loop Selection...
+
+Vetor aleatorio: Contador comparacao 27101 Contador atribuicao 36945 
+Vetor crescente: Contador comparacao 5049 Contador atribuicao 99 
+Vetor decrescente: Contador comparacao 14949 Contador atribuicao 19899 

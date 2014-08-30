@@ -3,9 +3,14 @@
 
 int main() {
 
-	int vetor_aleatorio[T];
-	int vetor_desc[T];
-	int vetor_asc[T];
+	int * vetor_aleatorio;
+	int * vetor_desc;
+	int * vetor_asc;
+
+	vetor_aleatorio = ( int * ) malloc ( T * sizeof(int));
+	vetor_desc = ( int * ) malloc ( T * sizeof(int));
+	vetor_asc = ( int * ) malloc ( T * sizeof(int));
+
 	int i = 0;
 	float contador_comparacao = 0;
 	float contador_atribuicao = 0;
@@ -120,7 +125,7 @@ void mostraInvertido (int *v, int n, char *msg){
 }
 
 
-/* FUN��O UTILIZADA PARA ORDENAR O VETOR UTILIZANDO O ALGOR�TMO "BUBBLE SORT" */
+/* FUNCAO UTILIZADA PARA ORDENAR O VETOR UTILIZANDO O ALGOR�TMO "BUBBLE SORT" */
 void bubble (int * v, int n, float * cc, float * ca) {
 	int i, j;
 	for ( i = 1; i < n; i++ ) {
@@ -134,14 +139,11 @@ void bubble (int * v, int n, float * cc, float * ca) {
 			}
 		}
 	}
-	//printf("CC %.f \n", *cc);
-	//printf("CC %.f \n", *ca);
 }
 
 
 /* FUN��O UTILIZADA PARA TROCAR A POSI��O E ORDENAR O VETOR "..." */     // MELHORAR A DESCRI��O <<<<<<<<<<<
 void troca (int *v, int pos){
-
 	int aux = v[pos];
 	v[pos] = v[pos+1];
 	v[pos+1] = aux;
