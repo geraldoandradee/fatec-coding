@@ -2,62 +2,57 @@
 
 
 int main() {
-	printf("\nGerando o vetor aleatorio...\n");
+
 	int vetor_aleatorio[T];
 	int vetor_desc[T];
 	int vetor_asc[T];
-
+	int i = 0;
 	float contador_comparacao = 0;
 	float contador_atribuicao = 0;
 
-	gera(vetor_aleatorio, T);
-	printf("Vetor aleatorio gerado \n");
+	printf("Vamos testar o buble para ordenar o vetor aleatorio\n");
+	for (i=0;i<10;i++) {
+		printf("Gerando o vetor aleatorio...\n");
+		gera(vetor_aleatorio, T);
+		printf("Vetor aleatorio gerado \n");
+		printf("Agora vamos ordenar o vetor aleatorio...\n");
+		bubble(vetor_aleatorio, T, &contador_comparacao, &contador_atribuicao);
+	}
+	printf("Vetor aleatorio: Contador comparacao %.f Contador atribuicao %.f \n", contador_comparacao, contador_atribuicao);
 
-	gera_vetor_crescente(vetor_asc, T);
-	printf("Vetor crescente gerado \n");
-
-	gera_vetor_decrescente(vetor_desc, T);
-	printf("Vetor descrescente gerado \n");
-
-	printf("Agora vamos ordenar o vetor aleatorio...");
-	bubble(vetor_aleatorio, T, &contador_comparacao, &contador_atribuicao);
-	printf("\nVetor aleatorio: Contador comparacao %.f Contador atribuicao %.f \n", contador_comparacao, contador_atribuicao);
-
+	i = 0;
 	contador_comparacao = 0;
 	contador_atribuicao = 0;
+	printf("Vamos testar o bubble para ordenar o vetor crescente\n");
+	for (i=0;i<10;i++) {
+		printf("Gerando o vetor crescente...\n");
+		gera_vetor_crescente(vetor_asc, T);
+		printf("Vetor crescente gerado \n");
+		printf("Agora vamos ordenar o vetor crescente...\n");
+		bubble(vetor_aleatorio, T, &contador_comparacao, &contador_atribuicao);
+	}
+	printf("Vetor crescente: Contador comparacao %.f Contador atribuicao %.f \n", contador_comparacao, contador_atribuicao);
 
-	printf("Agora vamos ordenar o vetor crescente...");
-	bubble(vetor_asc, T, &contador_comparacao, &contador_atribuicao);
-	printf("\nVetor crescente: Contador comparacao %.f Contador atribuicao %.f \n", contador_comparacao, contador_atribuicao);
-
+	i = 0;
 	contador_comparacao = 0;
 	contador_atribuicao = 0;
+	printf("Vamos testar o bubble para ordenar o vetor decrescente\n");
+	for (i=0;i<10;i++) {
+		printf("Gerando o vetor decrescente...\n");
+		gera_vetor_decrescente(vetor_asc, T);
+		printf("Vetor decrescente gerado \n");
+		printf("Agora vamos ordenar o vetor decrescente...\n");
+		bubble(vetor_aleatorio, T, &contador_comparacao, &contador_atribuicao);
+	}
+	printf("Vetor decrescente: Contador comparacao %.f Contador atribuicao %.f \n", contador_comparacao, contador_atribuicao);
 
-	printf("Agora vamos ordenar o vetor decrescente...");
-	bubble(vetor_desc, T, &contador_comparacao, &contador_atribuicao);
-	printf("\nVetor decrescente: Contador comparacao %.f Contador atribuicao %.f \n", contador_comparacao, contador_atribuicao);
-//
-//	gera_vetor_crescente(vetor_asc, T);
-//	printf("Vetor crescente gerado \n");
-
-//
-//	int comparacaoBubble = 0;
-//	int ordenacaoBubble = 0;
-//
-//	printf("Agora vamos ordenar o vetor em ordem crescente");
-//	int comparacaoInsertion = 0;
-//	int ordenacaoInsertion = 0;
-//
-//	printf("Agora vamos ordenar o vetor em ordem decrescente");
-//
-//	printf("Agora vamos ordenar o vetor de modo crescente");
 	return 0;
 }
 
 void gera_vetor_decrescente(int * vetor, int n) {
 	int i=0;
-	for(i=n;i>0;--i) {
-		vetor[i] = i;
+	for(i=0;i<n;i++) {
+		vetor[i] = n-i;
 	}
 }
 
@@ -89,9 +84,8 @@ int tem_repeticao(int * v, int n, int numero_gerado) {
 void gera (int *v, int n){
 	int i=0;
 	int numero;
-
 	while(i<n) {
-		numero = rand();
+		numero = rand() % T - 1;
 		if (!tem_repeticao(v, n, numero)) {
 			v[i] = numero;
 			++i;
@@ -107,9 +101,7 @@ void mostra (int *v, int n, char *msg){
 	for ( i = 0; i < n; i++ ){
 		printf ( "%d ", v[i]);
 	}
-	
 	printf ("\n");
-	
 }
 
 
