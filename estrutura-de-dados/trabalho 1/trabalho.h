@@ -2,7 +2,7 @@
 # include <stdlib.h>
 # include <time.h>
 
-# define T 100		// CONSTANTE DEFINIDA PARA A QUANTIDADE DE ITENS GERADOS NO VETOR
+# define T 100000		// CONSTANTE DEFINIDA PARA A QUANTIDADE DE ITENS GERADOS NO VETOR
 
 void gera_vetor_crescente(int *, int);
 void gera_vetor_decrescente(int *, int);

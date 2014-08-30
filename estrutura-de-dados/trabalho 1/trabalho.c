@@ -15,49 +15,49 @@ int main() {
 
   int i;
   
-  for(i=0; i<10; i++){
-    printf("\nGerando os vetores, %d loop Bubble...\n", i+1);
+  // for(i=0; i<10; i++){
+  //   printf("\nGerando os vetores, %d loop Bubble...\n", i+1);
     
-    gera(vetor_aleatorio, T);
-    gera_vetor_crescente(vetor_asc, T);
-    gera_vetor_decrescente(vetor_desc, T);
-    bubble(vetor_aleatorio, T, &contador_comparacao, &contador_atribuicao);
-    printf("\nVetor aleatorio: Contador comparacao %.f Contador atribuicao %.f \n", contador_comparacao, contador_atribuicao);
+  //   gera(vetor_aleatorio, T);
+  //   gera_vetor_crescente(vetor_asc, T);
+  //   gera_vetor_decrescente(vetor_desc, T);
+  //   bubble(vetor_aleatorio, T, &contador_comparacao, &contador_atribuicao);
+  //   printf("\nVetor aleatorio: Contador comparacao %.f Contador atribuicao %.f \n", contador_comparacao, contador_atribuicao);
 
-    contador_comparacao = 0;
-    contador_atribuicao = 0;
+  //   contador_comparacao = 0;
+  //   contador_atribuicao = 0;
 
-    bubble(vetor_asc, T, &contador_comparacao, &contador_atribuicao);
-    printf("Vetor crescente: Contador comparacao %.f Contador atribuicao %.f \n", contador_comparacao, contador_atribuicao);
+  //   bubble(vetor_asc, T, &contador_comparacao, &contador_atribuicao);
+  //   printf("Vetor crescente: Contador comparacao %.f Contador atribuicao %.f \n", contador_comparacao, contador_atribuicao);
 
-    contador_comparacao = 0;
-    contador_atribuicao = 0;
+  //   contador_comparacao = 0;
+  //   contador_atribuicao = 0;
 
-    bubble(vetor_desc, T, &contador_comparacao, &contador_atribuicao);
-    printf("Vetor decrescente: Contador comparacao %.f Contador atribuicao %.f \n", contador_comparacao, contador_atribuicao);
-  }
+  //   bubble(vetor_desc, T, &contador_comparacao, &contador_atribuicao);
+  //   printf("Vetor decrescente: Contador comparacao %.f Contador atribuicao %.f \n", contador_comparacao, contador_atribuicao);
+  // }
   
-  for(i=0; i<10; i++){
-    printf("\nGerando os vetores, %d loop Inserction...\n", i+1);
+  // for(i=0; i<10; i++){
+  //   printf("\nGerando os vetores, %d loop Inserction...\n", i+1);
     
-    gera(vetor_aleatorio, T);
-    gera_vetor_crescente(vetor_asc, T);
-    gera_vetor_decrescente(vetor_desc, T);
-    insertionSort(vetor_aleatorio, T, &contador_comparacao, &contador_atribuicao);
-    printf("\nVetor aleatorio: Contador comparacao %.f Contador atribuicao %.f \n", contador_comparacao, contador_atribuicao);
+  //   gera(vetor_aleatorio, T);
+  //   gera_vetor_crescente(vetor_asc, T);
+  //   gera_vetor_decrescente(vetor_desc, T);
+  //   insertionSort(vetor_aleatorio, T, &contador_comparacao, &contador_atribuicao);
+  //   printf("\nVetor aleatorio: Contador comparacao %.f Contador atribuicao %.f \n", contador_comparacao, contador_atribuicao);
 
-    contador_comparacao = 0;
-    contador_atribuicao = 0;
+  //   contador_comparacao = 0;
+  //   contador_atribuicao = 0;
 
-    insertionSort(vetor_asc, T, &contador_comparacao, &contador_atribuicao);
-    printf("Vetor crescente: Contador comparacao %.f Contador atribuicao %.f \n", contador_comparacao, contador_atribuicao);
+  //   insertionSort(vetor_asc, T, &contador_comparacao, &contador_atribuicao);
+  //   printf("Vetor crescente: Contador comparacao %.f Contador atribuicao %.f \n", contador_comparacao, contador_atribuicao);
 
-    contador_comparacao = 0;
-    contador_atribuicao = 0;
+  //   contador_comparacao = 0;
+  //   contador_atribuicao = 0;
 
-    insertionSort(vetor_desc, T, &contador_comparacao, &contador_atribuicao);
-    printf("Vetor decrescente: Contador comparacao %.f Contador atribuicao %.f \n", contador_comparacao, contador_atribuicao);
-  }
+  //   insertionSort(vetor_desc, T, &contador_comparacao, &contador_atribuicao);
+  //   printf("Vetor decrescente: Contador comparacao %.f Contador atribuicao %.f \n", contador_comparacao, contador_atribuicao);
+  // }
   
   for(i=0; i<10; i++){
     printf("\nGerando os vetores, %d loop Selection...\n", i+1);
@@ -139,34 +139,40 @@ void trocaMinimo (int *v, int min, int pos){
 
 void insertionSort (int * v, int n, float * cc, float * ca){
   int i, j, key;
-  for ( i = 1; i < n; i++ , (*cc)++) {
-    (*ca)++;
+  for ( i = 1; i < n; i++) {
+    (*cc)++; // comparaaoo do for
+    (*ca)++; //atribuicao seguinte
     key = v[i];
     while ( i > 0 && v[i -1] > key ) {
+      (*cc)++;
       trocaAnterior (v, i);
       --i;
       (*ca) = (*ca) + 4;  
     }
+    (*cc)++; // comparacao do while em caso falso
   }
+  (*cc)++;
 }
 
 void selection (int *v, int n, float * cc, float * ca){ 
   int i, j, x, min, k;
-  for ( i = 0; i < (n-1); i++ ){
-    (*cc) = (*cc)+2;
+  for ( i = 0; i < (n-1); i++ ) {
+    (*cc)++;
     min = i;
-    (*ca) = (*ca) + 1;
+    (*ca)++;
     for ( j = i + 1; j < n; j++ ){
-      (*cc) = (*cc)+1;
+      (*cc)++;
       if (v[min] > v[j]){
         min = j;
-        (*ca) = (*ca) + 1;
+        (*ca)++;
       }
+      (*cc)++;
       if( min != i){
-        (*cc) = (*cc)+1;
         trocaMinimo (v, min, i);
         (*ca) = (*ca) + 3;
       }
     }
+    (*cc)++; //do for
   }
+  (*cc)++;
 }
