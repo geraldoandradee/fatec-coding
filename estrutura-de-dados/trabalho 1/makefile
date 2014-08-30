@@ -1,6 +1,6 @@
 all: trabalho.o
 	gcc -o target/trabalho.sh target/trabalho.o
-trabalho.o: main.c trabalho1.h
-	gcc -c main.c -o target/trabalho.o
+trabalho.o: trabalho1.c trabalho1.h
+	gcc -c trabalho1.c -o target/trabalho.o
 clean:
 	rm -f *.o *.sh target/*
