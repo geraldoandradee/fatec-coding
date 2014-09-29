@@ -59,7 +59,7 @@ int main() {
   //   printf("Vetor decrescente: Contador comparacao %.f Contador atribuicao %.f \n", contador_comparacao, contador_atribuicao);
   // }
   
-  for(i=0; i<10; i++){
+  for(i=0; i<10; i++) {
     printf("\nGerando os vetores, %d loop Selection...\n", i+1);
     
     gera(vetor_aleatorio, T);
@@ -139,9 +139,7 @@ void trocaMinimo (int *v, int min, int pos){
 
 void insertionSort (int * v, int n, float * cc, float * ca){
   int i, j, key;
-  for ( i = 1; i < n; i++) {
-    (*cc)++; // comparaaoo do for
-    (*ca)++; //atribuicao seguinte
+  for ( i = 1; i < n; i++, (*cc)++, (*ca)++) {
     key = v[i];
     while ( i > 0 && v[i -1] > key ) {
       (*cc)++;
@@ -149,9 +147,7 @@ void insertionSort (int * v, int n, float * cc, float * ca){
       --i;
       (*ca) = (*ca) + 4;  
     }
-    (*cc)++; // comparacao do while em caso falso
   }
-  (*cc)++;
 }
 
 void selection (int *v, int n, float * cc, float * ca){ 

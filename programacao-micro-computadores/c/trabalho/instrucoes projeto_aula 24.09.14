@@ -1,0 +1,20 @@
+//informações complementares projeto1 --> 24/09/14
+
+/*
+enviar para professor:
+makefile
+frequencia.c
+frequencia.h
+main.c   --> pelo menos no main, mencionar nome dos integrantes, e turma
+
+o vetor para frequencia do alfabeto (frequencia_alfabeto) terá tam 26, para armazenar as constantes
+posiçao 0 = a; posicao 1 = b; ....; posicao 25 = z
+'a'+i = 'a'  //i será a posicao do vetor
+
+
+CASO DE TESTE: uma unica linha de texto
+Primeira linha: N inteiro que indica o numero de casos de teste
+Cada linha de texto deve ter ao menos 1 letra, e até 199 caracteres
+
+A FUNÇAO frequencia_alfabeto deve ser chamada 26 vezes
+*/
