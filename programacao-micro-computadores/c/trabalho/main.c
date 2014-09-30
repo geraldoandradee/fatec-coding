@@ -15,16 +15,14 @@ int main(){
 	printf("Forneca a quantidade de sentencas: \n");
 	scanf("%d", &quantidade_de_sentencas); 
 	// vamos declarar o vetor para armazenar as sentencas
-	char sentencas[quantidade_de_sentencas][COMPRIMENTO_MAXIMO];
+	char sentenca[COMPRIMENTO_MAXIMO];
 
 	// agora que ja temos onde armazenar as sentencas vamos pega-las
-	for (i=0;i<=quantidade_de_sentencas;i++) {
+	for (i=0;i<quantidade_de_sentencas;i++) {
 		printf("Entre com a frase ou palavra: ");
-		fgets(sentencas[i], COMPRIMENTO_MAXIMO, stdin);
-	}
-
-	for (i=0;i<=quantidade_de_sentencas;i++) {
-		puts(sentencas[i]);
+		// fgets(sentenca, sizeof(sentenca), stdin);
+		scanf("%[^\n]", sentenca);
+		puts(sentenca);
 	}
 
  //  int v[LETRAS_ALFABETO];
